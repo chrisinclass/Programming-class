@@ -1,0 +1,8 @@
+itemName = "Tv Stand"
+retailPrice = 325.00
+wholeSalePrice = 200.00
+profit = retailPrice - wholeSalePrice
+
+salePrice = retailPrice - (retailPrice*0.25)
+
+saleProfit = salePrice - wholeSalePrice
