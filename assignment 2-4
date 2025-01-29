@@ -1,0 +1,14 @@
+#caculate
+stateTax = 6.5
+federalTax = 28.0
+dependentDeduction = 2.5
+salary = 1250.0
+numDependents = 2
+totalWithholding = stateTax + federalTax + dependentDeduction
+
+takeHomePay = salary - totalWithholding
+
+print("Salary: $" , salary)
+print("federalTax: $", federalTax)
+print("dependentDeduction: $", dependentDeduction)
+print(takeHomePay)
