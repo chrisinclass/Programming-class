@@ -1,0 +1,14 @@
+# Decleare variables
+year = 0
+month = 0
+day = 0 
+#input statments
+year = int(input("Enter year: "))
+month = int(input("Enter month (1-12):  "))
+day = int(input("Enter day (1-31):  "))
+
+if year > 0 and 1 <= month <= 12 and 1 <= day <= 31:
+    print (f" {year} {month} {day} is a valid date")
+
+else:
+    print (f" {year} {month} {day} is an invalid date")
