@@ -1,0 +1,23 @@
+# assigning initial values
+charge = 0.00
+num_Chars = 8
+color = "gold"
+wood_Type = "oak"
+
+# Base charge for the sign 
+charge = 35.00
+
+# Additional charge for extra characters beyond the first five
+if num_Chars > 5:
+    charge += (num_Chars - 5) * 4
+
+# Additional charge for oak wood
+if wood_Type == "oak":
+    charge += 20.00
+
+# Additional charge for gold-leaf lettering
+if color == 'gold':
+    charge += 15.00  
+
+# Output the final charge
+print(f"The charge for this sign is ${charge}.")
