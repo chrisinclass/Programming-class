@@ -1,0 +1,60 @@
+# Segmant a
+a = 1
+b = 2
+c = 3 
+
+a = a + 1
+b = b + 1
+print("a:", a, "b:", b, "c:", c)
+
+
+# Segmant b
+d = 4
+e = 6 
+f = 7
+while d < f:
+    d = d + 1
+    e = 1
+    print("d:", d, "e:", e, "f:", f)
+
+# Segmant c
+g = 4
+h = 6
+while g < h:
+    print(g)
+    g = g + 1
+    print("g", g, "h", h)
+
+# Segmant  d 
+k = 5
+m = 6
+n = 9
+j = 2
+
+while j < k:
+    while m < n:
+        print("goodbye")
+        m = m + 1
+    j = j + 1   
+
+# Segmant  e
+k = 5
+m = 6
+n = 9
+j = 2
+while j < k:
+    while m < n:
+        print("Hello")
+        m = m + 1
+    j = j + 1    
+
+# Segmant f
+p = 4
+q = 7
+while p < q:
+    print("Aidos")
+    r = 1
+    while r < q:
+        print("Aidos")
+        r = r + 1
+    p = p + 1    
