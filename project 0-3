@@ -1,0 +1,64 @@
+# List of all available vehicles
+AvailableVehicles = [
+    "Ford F-150",
+    "Chevrolet Silverado",
+    "Tesla Cybertruck",
+    "Toyota Tundra",
+    "Nissan Titan"
+]
+
+import sys
+
+def display_menu():
+    """Display the main menu"""
+    print("\n****************************************")
+    print(" AutoCountry Vehicle Finder v0.2")
+    print("=================================")
+    print("Please Enter the following number below from the following menu:")
+    print("1. Print all Authorized Vehicles")
+    print("2. Search for Authorized Vehicles")
+    print("3. Add Authorized Vehicles")  
+    print("4. Exit")
+
+def print_vehicles():
+    """Print all available vehicles"""
+    print("\nThe AutoCountry sales managers have authorized the purchase and selling of the following vehicles:")
+    for vehicle in AvailableVehicles:
+        print(vehicle)
+
+def search_vehicles():
+    """Search for a specific vehicle in the allowed list"""
+    search_query = input("\nEnter the full vehicle name: ").strip()
+    if search_query in AvailableVehicles:
+        print(f"\n{search_query} is an authorized vehicle.")
+    else:
+        print(f"\n{search_query} is not an authorized vehicle. Please check the spelling and try again.")  
+
+def add_vehicle():
+    """Allows the sales manager to add a new vehicle to the list"""
+    new_vehicle = input("\nPlease Enter the full name of the vehicle to add: ").strip()
+    if new_vehicle in AvailableVehicles:
+        print(f"\n{new_vehicle} is already in the authorized list.")
+    else:
+        AvailableVehicles.append(new_vehicle)
+        print(f"\nYou have added {new_vehicle} as an authorized vehicle.")  # Fixed spacing in output message
+
+def main():
+    """Main function to run the program"""
+    while True:
+        display_menu()
+        choice = input("\nEnter your choice: ").strip()
+        if choice == "1":
+            print_vehicles()
+        elif choice == "2":
+            search_vehicles()
+        elif choice == "3":
+            add_vehicle() 
+        elif choice == "4":
+            print("\nThank you for using the AutoCountry Vehicle Finder, goodbye!")
+            sys.exit(0)
+        else:
+            print("\nInvalid choice. Please enter 1, 2, 3, or 4.")
+
+if __name__ == "__main__":
+    main()
